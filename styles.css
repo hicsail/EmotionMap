@@ -1,0 +1,98 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.data-entry {
+    margin-bottom: 20px;
+}
+
+.participant-id {
+    text-align: left;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+
+.dropdowns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+#color-grid {
+    display: grid;
+    grid-template: repeat(9, 5vw) / repeat(9, 5vw);
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cell {
+    width: 5vw;
+    height: 5vw;
+    border: 1px solid #ccc;
+}
+
+.selected {
+    border: 2px solid #000;
+}
+
+.grid-container {
+    position: relative;
+    display: grid; /* Changed from flex to grid */
+    grid-template-columns: auto 1fr auto; /* Added grid columns */
+    grid-template-rows: auto 1fr auto; /* Added grid rows */
+    gap: 10px; /* Added gap between grid items */
+}
+
+.grid-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-label,
+.bottom-label,
+.side-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#high-energy {
+    margin-bottom: 0;
+}
+
+#low-energy {
+    margin-top: 0;
+}
+
+#unpleasant {
+    white-space: nowrap;
+    transform: rotate(0); /* Rotate the label horizontally */
+    align-self: center; /* Center the label vertically */
+}
+
+#pleasant {
+    white-space: nowrap;
+    transform: rotate(0); /* Rotate the label horizontally */
+    align-self: center; /* Center the label vertically */
+}
+
+.export-button-container {
+    margin-top: 20px;
+}
